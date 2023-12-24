@@ -12,7 +12,7 @@ const links = [
   { name: "خانه", href: "/", id: 1 },
   { name: "خدمات ما", href: "/hi", id: 2 },
   { name: "استعلام قیمت", href: "/hey", id: 3 },
-  { name: " بلاگ", href: "/hoy", id: 4 },
+  { name: " بلاگ", href: "/blog", id: 4 },
   { name: "تماس با ما", href: "/by", id: 5 },
 ];
 

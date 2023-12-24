@@ -5,7 +5,7 @@
 :root {
   font-size: 1rem;
   direction: rtl;
-  font-family: "IRANSansXV", sans-serif;
+  font-family: "IRANSansXV2", "IRANSansXV1", "IRANSansXV3", "IRANSansXV4";
   color: rgba(0, 0, 0, 1);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,10 +26,22 @@ body {
   overflow-x: hidden;
 }
 @font-face {
-  font-family: "IRANSansXV";
-  src: url("../public/fonts/IRANSansXV.woff2") format("woff");
+  font-family: "IRANSansXV1";
   src: url("../public/fonts/IRANSansXV.woff") format("woff");
 }
+@font-face {
+  font-family: "IRANSansXV2";
+  src: url("../public/fonts/IRANSansXV.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IRANSansXV3";
+  src: url("../public/fonts/IRANSansX-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "IRANSansXV4";
+  src: url("../public/fonts/IRANSansX-Regular.woff") format("woff");
+}
+
 @layer base {
   input[type="number"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button {
