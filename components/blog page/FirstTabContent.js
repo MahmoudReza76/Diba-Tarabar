@@ -4,8 +4,8 @@ import Link from "next/link";
 function FirstTabContent({ data }) {
   return (
     <div className="w-full h-full ">
-      <div className="w-full flex justify-center items-center flex-col py-5  ">
-        <div className=" flex w-[75rem] gap-16 justify-center items-center flex-row border-b-4 border-zinc-100 pb-10 ">
+      <div className="w-full flex justify-center items-center flex-col py-5   px-24 ">
+        <div className="border-b-4 border-zinc-100 pb-10 gap-16 flex justify-center items-center flex-row">
           <div className="w-full h-full ">
             <Image
               src={data[0]?.imageUrl}
@@ -23,7 +23,6 @@ function FirstTabContent({ data }) {
               {" "}
               {data[0]?.overview}
             </p>
-
             <div className="w-full flex justify-end mt-2">
               <button className=" w-[11rem] flex items-center justify-center h-14 bg-white rounded-2xl border-2 border-blue-500 border-opacity-75 hover:bg-blue-500/20 ">
                 <Link
@@ -38,7 +37,7 @@ function FirstTabContent({ data }) {
         </div>
 
         <div className="w-full h-full flex justify-center py-8">
-          <div className="w-[80rem] grid grid-cols-3 justify-center items-center gap-4 gap-y-6   ">
+          <div className="w-[80rem] grid grid-cols-3 justify-between items-center gap-x-24 gap-y-6   ">
             {data.map((item) => (
               <div
                 key={item.id}

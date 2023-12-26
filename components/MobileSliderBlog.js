@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
-import { FreeMode, pagination } from "swiper/modules";
+import { FreeMode, Pagination } from "swiper/modules";
 
 function MobileSliderBlog({ data }) {
   return (
@@ -16,9 +16,9 @@ function MobileSliderBlog({ data }) {
           className="h-52"
           spaceBetween={10}
           slidesPerView={2.5}
-          pagination={{ clickable: true }}
+          Pagination={{ clickable: true }}
           freeMode={true}
-          modules={(FreeMode, pagination)}
+          modules={(FreeMode, Pagination)}
         >
           {data.map((post) => (
             <SwiperSlide
